@@ -1,0 +1,901 @@
+client id [b66da69f971594e1f734]
+secret[bad3bbeba1cabf7519ff03faf8e2c7f0c0a6cb7d]
+
+prepared for introduction{
+1. Name, education & total experience
+2. background 
+3. bold lines for tech tack 
+4. bold lines for work on domain
+}
+
+namshi
+toptal
+turning
+cap thorem
+
+Need to cover this week NB{
+https://app.codility.com/  => need to check how to calculate score of test task
+
+
+SCRUM & SCRUM principles 
+Sprint time (1w, 2w or more then 2w Pros & cors)
+Kafka connectors ==> Kafka(Producer & Consumer, Stream API, Kafka connector API, KTable, compact topic etc..)
+Monolithic vs Microservice intro in deep
+SQL/RDBM  vs NoSQL MongoDB
+how to integrate Elasticsearch with DB and use Elasticsearch as DB query
+Redis -- with working 
+
+Kafka -- 
+ brokers where.how what
+ leaders ?
+ partitions ? 
+ message across partitions
+}
+
+
+Quaid-e-Awam University of Engineering, Science and Technology
+
+
+Java Test Practice(
+https://www.hackerrank.com/domains/data-structures
+https://www.algoexpert.io/
+ )
+
+Cyber security{
+Linux kali
+aircrack-ng suite
+
+} 
+JVM(
+	GraalVM
+	JVM Tuning
+	Garbage collection algorithms -- need to check variants 
+	Bytecode
+	
+	Heap space: All live objects are allocated here.
+	Stack space: Stores references to the object for variable in method call or variable instantiation.
+	Perm/Meta space: Stores loaded classes/static members information
+)
+
+Angular practically need to work on it and it's interview preparetion -- coming week 
+React JS practically need to work on it and it's interview preparetion 
+
+Write well designed, testable, quality code following clean code principles
+
+Java OOP
+Java collections =>
+Java serilizations =>
+Java multi threading
+Java threads pool
+Java threads pooling frameworks
+Java Local Thread scope
+Spring @autowired field injection Vs constructor injection
+JHipster
+Microservices(
+Spring boot Cloud{
+Spring HATEOAS principle  > URL pattern will return in response with self(with data of its' callable) and template 
+						  > a variant of swagger
+1. cloud connectors(relational databases, MongoDB, Redis, RabbitMQ) need to work on practically and interview Qs all components
+}
+
+)
+
+to minimized code defects or Maximized code coverage ? how to do that
+SonarQube{
+SonarQubeCloud
+SonarLint
+Sonar Uses {
+	CheckStyle
+	FindBugs 
+	PMD
+	Cobertura 
+	clover
+	surefire
+	squid
+}
+}
+{
+1. use StringBuilder over String for concatenation
+avoid using for each like-> iterator, for(String item:strings){} and use forEach of java 8 OR use Array structure like  for(String item:ToArray(strings)){}
+
+}
+
+
+Customer(Id, name,contactNo,address)
+Order(Id, OrderNo,customerId,Status,amount)
+OrderItem(Id, OrderId,itemName,amountItem)
+
+select customerName, contactNo, OrderNo,status as OrderStatus, NoOfItems 
+
+Java 8 features in details with examples{
+	1. Lamdba expressions -> short
+	2. Streams API{
+		Stream pipelining? (Chaining of Stream, comes Intermediate operations to Terminal)
+		Stream is Lazy (because it will not process until we call Terminal Operation)
+		Intermediate Operations(Filter, Map,FlatMap,Sorted,Distinct,Peek,Limit,Seek)
+		Terminal Operations(forEach,Collect,Count,Reduce,Match,toArry,Min,Max,AnyMatch,AllMatch,findFirst,findAny,noneMatch)
+		Collectors Class?
+		StreamSupport class?
+	}
+	Functional interface # parameters Return type        default Method
+	Comparator 				Two 		int					int compare(T o1,T o2)
+	Consumer 				One 		void				void accept(T t)
+	Predicate 				One 		boolean				boolean test(T t)
+	Supplier 				None 		One(type varies)	T get()	
+	3. Method Reference{		
+		i.   Reference to a static method								> ContainingClass::staticMethodName
+		ii.  Reference to an instance method of a particular object		> containingObject::instanceMethodName
+		iii. Reference to an instance method of an arbitrary object of a particular type	> ContainingType::methodName
+		iv.  Reference to a constructor                                  >	ClassName::new
+		}
+	4. Date APIs --JodaTime libs
+	5. Interface defualt method implementation
+	6. Collection forEach
+	7. PermGen over MetaSpace -- PermGen fixed size of mem whereas MetaSpace is dynamically growing itself
+	and more
+}
+Project Lombok
+
+java 9 features in details with examples{
+1. REPL (JShell)
+2. Factory Methods for Immutable List, Set, Map and Map.Entry
+	.of() mtethods introduced
+3. Private Methods in Interfaces
+4. Module Systems ---Jigsaw Project
+5. Process API
+6. HTTP 2 Client
+7. HTML5 Javadoc
+8. Multi-resolution images 
+and more
+}
+java 10 features in details with examples{
+1. Application Data-Class Sharing
+2. Parallel Full GC for G1
+3. Garbage Collector Interface
+4. Local-Variable Type Inference
+		It will enhance the Java Language to extend type inference to declarations of local variables with initializers and also introduces var to Java, something that is common in other languages.
+5. Thread-Local Handshakes
+		It introduces a way to execute a callback on threads without performing a global VM safepoint. Makes it both possible and cheap to stop individual threads and not just all threads or none.
+6. Time-Based Release Versioning
+		It revises the version-string scheme of the Java SE Platform and the JDK, and related versioning information, for present and future time-based release models.
+7. Root Certificates
+		It provides a default set of root Certification Authority (CA) certificates in the JDK.
+8. Heap Allocation on Alternative Memory Devices
+		It enables the HotSpot VM to allocate the Java object heap on an alternative memory device, such as an NV-DIMM, specified by the user.
+9. Experimental Java-Based JIT Compiler
+		It enables the Java-based JIT compiler, Graal, to be used as an experimental JIT compiler on the Linux/x64 platform.
+and  more
+}
+Java 11 features in details with examples{
+1. Running Java File with single command
+2. New utility methods in String class
+3. Local-Variable Syntax for Lambda Parameters
+4. Nested Based Access Control
+5. JEP 321: HTTP Client
+6. Reading/Writing Strings to and from the Files
+7. JEP 328: Flight Recorder
+  and more 
+}
+functional programming
+Lamdba expressions
+Data structure
+	Trees
+	DFS,BFS
+	sorting algorithms
+	stack
+	Queue
+Data structure
+	Tree > sorting> searching >traversing>with all orders
+	sorting > all> best one
+	Database implementation
+
+1. why java object reference are created on stack
+2. and their objects are created on heap
+
+transaction management in JPA
+transaction management in Hibernate
+transaction management in EJB
+
+Spring bean life cycle{
+Instantiate
+BeanPostProcessor{
+PostProcessBeforeInitialization()
+}
+}
+
+Spring Reactive? 
+Spring versions and their features
+{
+
+}
+Spring Boot versions and their features
+{
+
+}
+
+Spring Security{
+	Attacks {
+		Injection(SQL, LDAP, XPath, or NoSQL queries, OS commands, XML parsers, SMTP headers, expression languages, and ORM queries)
+		Session Fixation:  is an attack that permits an attacker to hijack a valid user session.
+		Clickjacking	:  is a malicious technique of tricking a user into clicking on something different from what the user perceives.
+		Cross-Site Request Forgery (CSRF). is an attack that forces an end user to execute unwanted actions on a web application in which they’re currently authenticated
+		XSS:		 attacks enable attackers to inject client-side scripts into web pages viewed by other users
+	}
+	Encoding:  the process of changing data representation i.e decimal to Hex
+	Compression: algorithms are techniques that exploit redundancy in data to reduce the size of the data representation
+	Hashing: is a method of one-way encryption, once you hashed the data can't be revert back to plain text.
+	Encryption: is a two-way process, it can be revert to back to plaintext.
+				Usually is the process of concealing information solely based on the secrecy of some smaller value.
+
+	Symmetric				Asymmetric
+	secret key				public/private key
+	key length 256/512		minimium recommended 2048
+	fast					slow
+	used large data			used in small data
+		
+	Symmetric Algorithms{
+		AES (Advanced Encryption Standard)
+		DES (Data Encryption Standard)
+		IDEA (International Data Encryption Algorithm)
+		Blowfish (Drop-in replacement for DES or IDEA)
+		RC4 (Rivest Cipher 4)
+		RC5 (Rivest Cipher 5)
+		RC6 (Rivest Cipher 6)
+	}
+	Asymmetric Algorithms{
+		S/MIME
+		GPG, an implementation of OpenPGP
+		EMV, EMV Certificate Authority
+		IPsec
+		PGP
+		ZRTP, a secure VoIP protocol
+		Transport Layer Security standardized by IETF and its predecessor Secure Socket Layer
+		SILC
+		SSH
+		Bitcoin
+		Off-the-Record Messaging
+	}
+}
+
+spring boot commandRunner VS ApplicationRunner{
+	It is used to execute the code after the Spring Boot application started.
+		difference commandRunner's run method Accepts Array string as argument
+			ApplicationRunner's run method Accepts ApplicationArguments  as Argument
+}
+
+CDI level vs AOP
+Spring boot in details
+Spring boot 1.X
+Spring boot 2.X
+
+docker(
+	introduction
+	image
+	need
+	ram
+	volume
+)
+
+Kafka{
+consumer group
+-- is used for processing request in concurrently
+-- each consumer which having same group id is assign a partition of that topic
+--there is is group coordinator that is take care of assign partition and load balancing/send to consumers
+
+Tombstone Record: When using compacted topics, a record with a null value (also called a tombstone record) represents the deletion of a key
+
+}
+
+
+AOP which design pattern used?
+	cross cutting concerns?
+
+return with dynamic/static polymorphism 
+	--gives same error is in it's own class, already exist method with same signature in class/parent class(incompitable return type)  
+throws exception > parant/child method remove/add 
+	compiler follows the method signature in signature method name and parameter and their sequence matters, 
+	for return type will give error
+	for throws exception does not matter either in parent nor child
+
+SOLID principles {
+The following 5 concepts make up our SOLID principles:
+	Single Responsibility
+	Open/Closed
+	Liskov Substitution
+	Interface Segregation
+	Dependency Inversion
+}
+   
+ACID properties{
+Atomcity:    all the modified data are performed or none of them will be.
+Consistency: maintains data integrity constraints, leaving the data consistent.
+Isolation: ensuring that the transaction will not be changed by any other concurrent transaction.
+Durability: changes are persisted permanently in the database.
+}
+@Transactional JAVA EE and @Transactional  Spring 
+@Transactional  PitFalls{https://codete.com/blog/5-common-spring-transactional-pitfalls/,https://www.marcobehler.com/guides/spring-transaction-management-transactional-in-depth}
+JPA Transaction types
+deep transaction in JPA/Hibernate/ spring
+dynamic array/
+data structure in deepest problem solving 
+kubernetes {
+	Security GuideLines{
+		where security can exist/comes(
+		1. container image,
+		2. container host,
+		3. container registery
+		4. container orchestration
+		)
+	
+		Ownership of developer( srouce code of App, 3rd party dependencies, docker file-Os dependencies, IaC files(terraform, K8s files))
+		Security Context
+			privileges containers(Access host's resources i.e manipulating network stack, GPU access, running docker in docker )
+			root containers(install system pacages, editing & creating configutation, Network Ops, user/groups, use mounted)
+		Resource limitation
+				CPU
+				Memory
+	}
+
+	deployment strategies{
+		1. ReCreate -- completely recreates all pods.
+		2. Rolling Update -- creates defined number of pod(s), once created those defined pod(s) then destroy them. 
+		3. Blue-Green\Red-Black --Blue is Prod Running, Green creates all new pods with different version and test them after signed off it change to blue/ PROD.
+		4. Canary --is Blue-Green Strategy with slightely changes, partially routed the to PROD from green once signed off/tested all then move to 100%. 
+	}
+}
+serializations, 
+serializations how it works internally, 
+serializations ways of making it
+Serialization is "Horrible mistake" in 1997 by Mark Reinhold, chief Architect Oracle java
+java play framework tutorial -- Explore it
+
+how many ways to inject the multiple interfaces injections and extended classes also.
+spring module web portlet
+
+
+association and composition
+abstraction vs encapsulation
+
+Networking 
+AWS CNI
+AWS VPC 
+AWS NETWORKING GROUP
+
+Drools {
+definition: Drools is a business rule management system with a forward and backward chaining inference based rules engine, more correctly known as a production rule system, using an enhanced implementation of the Rete algorithm
+Pattern Matching including −
+	1. Linear
+	2. Rete
+	3. Treat
+	4. Leaps
+}
+Object pooling 
+for vs foreach
+deCoupling
+
+RedShift
+OpenShift
+lambda 
+S3
+
+Cluster 
+Id
+ALL union
+CSRF 
+
+best practice java 
+design pattern
+application design pattern 
+microservice design pattern
+static pattern vs observer pattern
+clustered indexed vs non clustered indexed
+
+
+
+Intellect CBX Product Engineer {
+Digital Transaction Banking
+
+A Complete, Front-to-Back Platform.
+
+Full Coverage of All Transaction Banking Products:
+	Payments and Cash Management, Collections and Receivables
+	Trade Finance and Supply Chain Finance
+	Liquidity Management and Investments, Virtual Accounts
+Navigating A Minefield of Flows:
+	Account balance precision and timely information
+	Integrated exposure panels across currencies and borders
+	Extensive Payment and Collection backbone
+Working Capital Proficiency:
+	Algorithmic liquidity
+	Near-term cash projections
+Dynamic, Organic Growth:
+	Configuring entitlements – dynamically supporting client complexity
+	Self-service account enablement
+A Complete, Front-to-Back Platform:
+	API-enabled, open banking-ready
+	Embedded payment and collection standard libraries
+}
+
+
+
+
+
+Database scaling{
+	design patterns
+	Solid Object-Oriented analysis and design skills, understanding of design patterns, concepts like OOD, TDD, BDD, DDD, CI / CD
+}
+
+Security{
+	encryption
+	hashing
+	encoding
+	data obfuscation/data masking
+}
+
+
+wso2
+
+Customer(Id, name,contactNo,address)
+Order(Id, OrderNo,customerId,Status,amount)
+OrderItem(Id, OrderId,itemName,amountItem)
+
+select customerName, contactNo, OrderNo,status as OrderStatus, NoOfItems 
+
+Grails, Micronaut,
+
+Interview topic for Questions{
+
+Encapsulate - hide variable to use we use getter n setter. [bind data from external world]
+Abstraction - interface, implementation. we only call and use it. -> [hiding of the data from the world.]
+
+Polymorphisim: 
+	Static & Dynamic :
+	Compile time -> static [overloading]
+	Run time-> dynamic [overriding]
+primitive   -- non -primitive -- wrapper class
+int            Integer     
+byte           Byte
+long           Long
+float          Float
+double         Double
+
+int i=9;    memory   -> 9
+Integer i=9; memory  ->address->123ae->9
+
+== vs equals method
+
+//JVM --instance
+String s1 ="ABC"; //String pool
+String s2 ="ABC";
+boolean b1= s1==s2; //true
+s2 = new String("ABC");
+boolean b2= s1==s2;//false
+
+Class A{
+	public static void  main(String[] a){
+	//\u000D System.out.println("Hello");
+	
+	}
+}
+
+public class A{
+public String methodA(String a, String b){
+	return "hello String";
+
+}
+public Integer methodA(String a, String b){
+	return new Integer(5);
+}
+
+Class AMain{
+	public static void  main(String[] a){
+	A a= new A();
+	Object obj = a.methodA("p1","p2");
+	System.out.println(obj);
+	
+	}
+}
+}
+
+public class HelloGoodbye {
+	public static void main(String[] args) {
+	try {
+	System.out.println("Hello world");
+	System.exit(0);
+	} finally {
+	System.out.println("Goodbye world");
+	}
+	}
+}
+public class Elvis {
+	public static final Elvis INSTANCE = new Elvis();
+	private final int beltSize;//0
+	private static final int CURRENT_YEAR = Calendar.getInstance().get(Calendar.YEAR);//0
+	private Elvis() {
+		beltSize = CURRENT_YEAR - 1930;
+	}
+	public int beltSize() {
+		return beltSize;
+	}
+	public static void main(String[] args) {
+		System.out.println("Elvis wears a size " +INSTANCE.beltSize() + " belt.");
+	}
+}
+public class A{
+
+
+private  int id;
+private String name;
+//setter getter goes here
+
+public A(int id,String name){
+this.id=id;
+this.name=name;
+}
+}
+
+public class Tester(){
+
+A a = new A(5,"ABC");
+A b = new A(5,"ABC");
+
+boolean bool = a.equal(b);
+
+}
+
+Class myList{
+private int capacity;
+private int index;
+private String arr[];
+
+
+public String[] add( String element){
+
+if(index>=capacity){
+String tempArr[] = new String[capacity*1.5];
+
+for(int i=0;i<index;i++){
+tempArr[i]=arr[i];
+}
+arr = tempArr;
+}
+}
+arr[index++]=element;
+return arr;
+}
+
+Main(){
+List l = new ArrayList();
+
+myList ml = new myList();
+
+}
+
+Class ClazzA{
+  //fields
+  
+  //methods
+  
+  hashCode() //default, custom method
+  equal() //default, custom method
+
+}
+
+int index = obj.hashCode();
+index=index>>;
+Node[index]=node;
+
+Node{
+array Node[0]=obj;
+array Node[1]=obj1;
+}
+Node{
+array Node[0]=obj;
+}
+Node{
+array Node[0]=obj;
+}
+Node{
+array Node[0]=obj;
+}
+
+- HashCode Method & Equal methods. what are the contract?
+
+Map<String,ClazzA> clazzAMap = new HashMap();
+
+1) Collection 
+	- Why Collection doesn’t implements Cloneable and Serializable interfaces?
+	- Thread safe & non thread safe.   //Vector, Hashtable, Stack(check), ConcurrentHashMap
+	- Unique and non unique			/map(key),set->childs  
+	- ArrayList & Array [Custom ArrayList implementation -> Add method code. 3 variable, capacity, current index, arrayElement (object type)] initial capacity 10, 1.5*current capacity(10)= new capacity = 15,
+	- Hash Map. how hash works?
+	- Which works FAST, Array or Hash, Searching n soritng fast?
+	- HashCode Method & Equal methods. what are the contract?
+	- Linked list.
+	- fail-fast  vs  fail-safe
+	- Vector is a thread safe collection
+	- hash table
+	- Hash map - non synchronize.
+	- concurrentHashMap vs SynchronizedMap(Collection has Synchronized for Map/List/Set which provide thread safety for un-thread collection)
+	- Array vs ArrayList
+	- Vector vs ArrayList
+	- ArrayList vs LinkedList(LinkedList maintained insertion of order where ArrayList not)
+	- List vs Set (set stores Unique  elements where list stores non unique	)
+	- TreeSet vs HashSet  (TreeSet is sorted where Hashset is unsorted)
+	- HashMap(insertion order is random) vs LinkedHashMap(insertion order of keys)
+	- TreeMap(sorted) vs LinkedHashMap(insertion order of keys) vs HashMap(insertion order is random)
+		
+    public final class MyKey{
+        private final String key;
+        public MyKey(String key){
+            this.key=key;
+        }
+        public String getKey(){return this.key;}
+
+        @Override
+        public int hashCode() {
+            return super.hashCode()*12;
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            return this.getKey().equals(((MyKey)obj).getKey());
+        }
+    }
+MyKey key = new MyKey("keyOne");
+myHashMap.put(key, "Value");
+String val = myHashMap.get(new MyKey("keyOne")); 
+
+
+Multi Threads:
+	- Different methods of threads. 
+	- functions
+	- wait() , yeild(), sleep(), join(), 
+	- thread pooling & its frameworks
+
+Synchronization
+		- Implementation.
+		- Method Level and Block Level. which one is fast?
+		- synchronization on static method,
+		- object level threading. sol: make static mathod
+		
+	Class A implements Runnable{
+		private int id;
+		private String name;
+		
+		public synchronized void methodA(){
+		System.out.println("MethodA executed");
+		}
+		
+		 public void run() {
+			methodA();
+		}
+	}	
+	
+	Class TesterClass{
+	
+	ExecutorService obj = Executors.newFixedThreadPool(10);;
+	
+	
+	obj.execute(new A());
+	obj.execute(new A());
+	obj.execute(new A());
+	obj.execute(new A());
+	obj.execute(new A());	
+	obj.shutdown();
+	}
+com.systemsltd.serialization.A implements Serializable{
+public void methodA(){
+System.out.println("MethodA executed");
+}
+}
+
+com.systemsltd.serialization.A implements Serializable{
+public void methodA(){
+System.out.println("MethodA executed modified");
+}
+}
+
+Serialization
+		- To Transfer Dtos. [Data transfer object]
+		- Object ki state ki bytestream me convert krke save krdeti hai.
+		- De-serialization.
+		- * Serial UUID. (concept) -> class k andr id calculate krke deserialize krke multple classes tou nhi pare hue.
+		- Attacks
+	
+Servlet
+	    - life cycle. initial(init) - service - destroy(resource closing)
+		- concept.
+		- by nature it is multi threaded.
+		- Request filter & Session filter. 
+	
+JDBC
+		- Connection pooling.
+		- create statement or prepared statement. difference.
+		- callable statement. 
+		
+		
+CustomerEntity(Id, name,Mobile,Address)	
+OrderEntity(id,OrderNo,CustomerId,status)
+select customerName,mobile,OrderNo,Status			
+OrderDetailsResponseDTO(customerName,mobile,OrderNo,Status)		
+
+ORM
+		- JPA & Hibernate. (Java Persistence API specification & Hibernate is above layer implemented & we use both in SPRING)
+		- sessionFactory is used to create Session Object, SessionFactory is thread safe also while session is not thread safe
+		- sessionFactory.OpenSession vs sessionFactory.getCurrentSession 
+		- JPA Multi Tenancy 
+		- Hibernate Tuning - Strategies(SQL Optimization, Session mangement, data caching)
+		- Hibernate Dirty checking --
+		- Cache - Level1 (by default, session stored. Persists)
+				- Level2 (it is not by default. it is used for session factory)
+		- Beans/Entity States (transient, persists [ at this stage it comes in level1 cache.], detached)
+		- Load()-- throw exception if Id not found vs Get() it will not throw exception rather then returns null
+		- Relation & Assocation
+		- Aggregation & Assocation & composition difference
+		- Non entity me qisi result me safe krwalo?
+			- non entity ka result set bna kr map krwalo.
+			- result set new constructor bna kr save krleta hai.
+		
+- Hibernate Dirty checking question example
+//cross cutting 
+method {
+try{
+seession = sessionFactory.getCurrentSession();
+seession.beginTransaction();
+findCustomerById();
+seession.commit();
+Catch(Exception e){
+seession.rollback;
+} finall{
+seession.close();
+}
+}
+
+@Transactional  //if present or not 
+CustomerEntity findCustomerById(int id){
+CustomerEntity custEntity =  null; // transient
+custEntity = entityManager.findById(id); //persists
+entityManager.detach(custEntity);//detch //transient
+custEntity.setContact(0300000000000); //transient
+return custEntity;
+}
+
+txn open -- begin
+findCustomerById();
+txn close -- commit/rollback
+
+
+
+
+ACID properties
+
+Atomcity   -- 
+Consistency -- 
+isolation --
+duriable --	
+		
+OrderDTO placeORder(OrderDto orderDto){
+	//insert Order 
+	//insert OrderItem // exception
+	
+	return orderDto;
+}		
+		
+Transaction Management (DB):
+		- Two type. configurable & programmable (managed by session, rollback etc).
+		- JTA. Java transaction management API. @Transactional (Annotation) automatically rollback & commit. 
+		
+Class A{
+
+
+public A(){
+	thorw Exception;
+}
+}		
+
+Class  B{
+    
+	private A a;
+	
+	public B(){
+	a = new A(); //fail
+	}
+
+}		
+
+calling/main(){
+
+	B b = new B();//depended A //fail
+}
+
+Context Dependency Injection ---java ee 6
+Spring
+		- what it Spring? Inversion of Control. Dependency Injection.
+		- Spring Container? manage Beans life cycle, what is bean life cycle? //ApplicationContext/ FactoryBean
+		- Spring MVC.
+		- Spring AOP. [cross concerend Implementation] Aspect Oriented Programming 
+		- Spring Boot 
+			- Advance
+			- No need to additional configutation. provide auto configutation. 
+			- in spring jdbc tempalte we have fix functionalities but in spring boot we have certain API and open to use by your need.
+			- Light wieght. Embedded Server. -> TOMCAT , JEETY , UNDER-TWO
+			- Best for Microservices architecture
+			SerlvetDispatcher -> MVC controller  wraper to @RestController
+		
+		- Ways of Field Injection ? @Autowire
+		- Constructor Injection -> IT IS THE BEST BECUASE. field by default singleton hi rahega. but constructor hi autowire rahega.
+		- Setter Injection
+		- XML file me bean bna kr map krwa dete hain. 
+		- Annotaiton :- 
+		@component - Parent Annotaiton [spring container me bean create krlega]
+		@service - [for usage of service. extend component. use as a buisness entity]
+		@transactional - JTA ki extend krti hai
+		@RestController - class ko as a rest controller manta hai to expose as a controller.
+		@Controller - class ko as a MVC controller.
+		@configutation - configutation class hai. 
+		
+			
+Query
+	- group by
+	- having
+	- soritng
+	- having with where or not.
+	- joins. 
+	- union all & union difference?
+	- union ka contract. (fields n type same )
+	
+
+
+Design Patterns:
+		- Singleton
+		- Abstract Factory
+		- Factory
+		- MVC 
+		- SOLID principles
+	    - Proxy 
+		- Microservice Pattern
+		- Observer
+		- Proxy 
+		- Microservice Pattern
+		
+DATABASE {
+
+concepts of following,
+Keys
+Joins
+functions
+	count, Min,MAX, Order by , Group by , having, where, having with where, case
+
+Procedure in details
+Function in details
+Views in details
+Procedure VS Function vs Views
+
+
+
+customer (id, name,contact,address)
+Order(id, orderNo,CustomerId,amount,status)
+OrderItem(id, orderId,itemName,ItemPrice)
+select name,contact,orderNo,amount,status ,noOfItems
+
+}
+
+
+Managing Consultant App Development
+
+Feedback {
+	He has average concepts and he worked on non-cloud environment average, and did not worked on cloud environment, we can consider him as Software Engineer .
+	OOP Concepts: average
+	Java/Java EE: Average
+	ORM/JAP/Hibernate: Average
+	Integration: Rest average, SOAP none
+	Spring/Spring Boot: average
+	Database: Average
+ }
+
+
+GIT pull request
+
+
+}
