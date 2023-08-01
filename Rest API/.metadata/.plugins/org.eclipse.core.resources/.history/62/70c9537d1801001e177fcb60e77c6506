@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thymeleaf Fragments: home</title>
+
+</head>
+<body>
+
+    <header th:insert="general.html :: header"> </header>
+    
+    <div th:replace="general.html :: aside"></div>
+    
+    <div th:replace="forms.html
+      :: formField(field='Name', value='Tanveer Hussain',size='40')">
+    </div>
+    
+    <div th:replace="general.html :: footer"></div>
+    
+</body>
+</html>

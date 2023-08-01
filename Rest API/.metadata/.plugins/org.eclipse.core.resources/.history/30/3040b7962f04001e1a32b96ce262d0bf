@@ -1,0 +1,62 @@
+package com.auth.entities;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
+
+public class UserData {
+
+	@NotBlank(message = "username can not be empty !!")
+	@Size(min = 3, max = 12, message = "username must be between 3 to 12 characters !!")
+	private String username;
+	@Email
+	@NotBlank
+	private String email;
+	@Size(min = 8, max = 12)
+	@Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" )
+	private String password;
+	
+	public UserData() {
+		super();
+	}
+
+	public UserData(String username, String email, String password) {
+		super();
+		this.username = username;
+		this.email = email;
+		this.password = password;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	@Override
+	public String toString() {
+		return "UserData [username=" + username + ", email=" + email + ", password=" + password + "]";
+	}
+	
+	
+	
+}

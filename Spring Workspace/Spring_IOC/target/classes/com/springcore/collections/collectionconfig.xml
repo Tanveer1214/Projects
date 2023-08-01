@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.springcore.collections.Person" name="c1">
+		<property name="name" value="Tanveer Ali"/>
+		
+		<property name="projects">
+			<list>
+				<value>Hospital Management System</value>
+				<value>Online Furniture App</value>
+				<null/>
+			</list>
+		</property>
+		
+		<property name="addresses">
+			<set>
+				<value>Village</value>
+				<value>Mehrabpur</value>
+				<value>Nawabshah</value>
+			</set>
+		</property>
+		
+		<property name="grudation">
+			<map>
+				<entry key="2014" value="Materic" />
+				<entry key="2016" value="Enter" />
+				<entry key="2023" value="I.T" />
+			</map>
+		</property>
+	</bean>
+ 
+</beans>

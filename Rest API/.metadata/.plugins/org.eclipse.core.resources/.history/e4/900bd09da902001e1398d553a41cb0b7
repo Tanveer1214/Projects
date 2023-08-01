@@ -1,0 +1,24 @@
+package com.auth.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.auth.entities.UserData;
+
+@Controller
+public class AuthController {
+
+	@GetMapping("/login")
+	public String loginForm(Model model) {
+		model.addAttribute("data", new UserData());
+		return "loginform";
+	}
+	
+	@PostMapping("/process")
+	public String processData() {
+		return "processform";
+	}
+	
+}

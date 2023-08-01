@@ -1,0 +1,13 @@
+INDEX VERSION 1.132
+D:\Spring Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3253522775.index
+\Spring_MVC\src\main\java
+D:\Spring Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3935333185.index
+\Spring_MVC\src\main\java
+D:\Spring Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2519942404.index
+\Spring_Search\src\main\java
+D:\Spring Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2600122709.index
+\Spring_CRUD\src\main\java
+D:\Spring Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\345060097.index
+\Games_News\src\main\main
+D:\Spring Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\7027797.index
+\Spring_Search\src\main\resources

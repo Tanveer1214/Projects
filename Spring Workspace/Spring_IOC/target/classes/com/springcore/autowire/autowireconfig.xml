@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.springcore.autowire.Person" name="person">
+		<property name="name" value="Tanveer Hussain" />
+		<property name="address" value="Mehrabpur" />
+	</bean>
+	
+   <!-- AutoWire by Name -->
+   <bean class="com.springcore.autowire.Student" name="student2" autowire="byName">
+		<property name="id" value="35" />
+		<property name="batch" value="2019" />
+   </bean>
+   
+   <!-- AutoWire by Type -->
+   <bean class="com.springcore.autowire.Student" name="student3" autowire="byType">
+		<property name="id" value="35" />
+		<property name="batch" value="2019" />
+   </bean>
+   
+   <!-- AutoWire by Constructor -->
+   <bean class="com.springcore.autowire.Student" name="student4" autowire="constructor" />
+   
+</beans>

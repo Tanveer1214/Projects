@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1 th:text="${age >= 18} ? 'Eligable' : 'Not Eligable'"></h1>
+
+	<h1>
+		<span th:style="${age >= 18} ? 'color:green' : 'color:red'" 
+		th:text="${age >= 18} ? 'You can vote' : 'You can't vote'"></span>
+	</h1>
+
+</body>
+</html>
