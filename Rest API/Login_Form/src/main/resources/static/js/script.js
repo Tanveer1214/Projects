@@ -1,1 +1,0 @@
-alert("This is a alert from tanveer")

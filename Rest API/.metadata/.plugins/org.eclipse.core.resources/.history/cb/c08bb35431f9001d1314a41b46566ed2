@@ -1,6 +1,0 @@
-package com.student.controller;
-
-@RestController
-public class StudentController {
-
-}
